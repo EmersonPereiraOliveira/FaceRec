@@ -59,6 +59,9 @@ while True:
     #Show images in the same window
     cv2.imshow("Face", np.hstack((frame, gray_frame_3_channels)))
     cv2.waitKey(100)
+    if sample >= number_of_samples + 1:
+        break
+
 
 print("Finish!")
 cv2.destroyAllWindows()
